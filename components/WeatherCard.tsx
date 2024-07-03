@@ -1,7 +1,7 @@
 import { View, Text, Image, StyleSheet } from 'react-native'
 import React from 'react'
 import { Colors } from '@/constants/Colors'
-
+import UnitPicker from '@/components/UnitPicker'
 const {primary_color, secondary_color} = Colors
 const WeatherCard = ({weather}:any) => {
     const temperature = weather.main.temp
@@ -36,7 +36,8 @@ const styles = StyleSheet.create({
     }, 
     text: {
         fontSize: 40,
-        color: primary_color
+        color: primary_color,
+        marginLeft: 20
     },
     description: {
         textTransform: 'capitalize',
